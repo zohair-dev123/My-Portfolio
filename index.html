@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">M ZOHAIR</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Muhammad Zohair</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <!-- <div class="section__pic-container">
+      <img src="./assets/profile-pic-blank.png" alt="John Doe profile picture" />
+    </div> -->
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Muhammad Zohair</h1>
+      <p class="section__text__p2">Software Quality Assurance & Automation Specialist</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Zohair_SQA.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https:www.linkedin.com/in/m-zohair-8868a12a9'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https:github.com/zohair-dev123'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <!-- <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div> -->
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>6+ Months <br />QA Automation & Manual Testing Expert</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>BSSE. Bachelors Degree in<br />Software Engeenering</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            As a dedicated and detail-oriented QA Automation and Manual Testing Engineer, I bring 6 months of hands-on
+            experience in ensuring the highest standards of software quality. My expertise in using tools like Cypress,
+            WebdriverIO, and Appium, combined with a strong understanding of Agile methodologies, enables me to
+            effectively contribute to the success of software development projects.</p>
+        </div>
+        <br />
+        <div class="text-container">
+          <p>
+            I have a solid background in JavaScript and the MERN stack, which allows me to approach quality assurance
+            with a comprehensive understanding of the development lifecycle. My experience includes creating and
+            maintaining CI/CD pipelines using GitHub Actions, performing cross-browser testing with BrowserStack, and
+            conducting thorough API testing using Postman and REST Assured.
+          </p>
+        </div>
+        <br />
+        <div class="text-container">
+          <p>
+            I am passionate about delivering bug-free, user-friendly software and am always eager to learn and apply new
+            techniques and tools to improve the QA process. I am now seeking opportunities to leverage my skills in a
+            dynamic environment where I can contribute to high-quality software releases and collaborate with talented
+            teams.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Core QA Skills</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Software Quality Assurance</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Test Automation</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Manual Testing</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>End-to-End Testing</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <!-- <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Tailwind</h3>
+                <p>Basic</p>
+              </div>
+            </article> -->
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Regression Testing</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Exploratory Testing</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Test Plan Development</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Bug Tracking</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Tools</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Cypress</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>WebdriverIO</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Appium</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Postman</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CI/CD Pipelines</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Jira</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>BrowserStack</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>GitHub Actions</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>API Testing</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <!-- <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div> -->
+          <h2 class="experience-sub-title project-title">Modus Pro</h2>
+          <h4>Automation | WebdriverIO</h4>
+          <div class="text-container">
+            <p>As a QA Automation Engineer, I led the automation of end-to-end testing processes using WebdriverIO for a
+              complex web application. I developed and executed automated test scripts to ensure high test coverage and
+              reliability. My role involved integrating the testing processes with CI/CD pipelines, optimizing the
+              deployment workflow, and reducing manual intervention. I also collaborated with cross-functional teams to
+              identify and resolve bugs, which enhanced the overall software quality.</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Zohair_SQA.pdf')">
+              Download CV
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <!-- <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div> -->
+          <h2 class="experience-sub-title project-title">Planera</h2>
+          <h4>Automation | Cypress</h4>
+          <div class="text-container">
+            <p>In my role as a QA Automation Engineer, I spearheaded the creation of automated test suites using Cypress
+              for a dynamic and data-intensive web application. I focused on implementing tests that cover various user
+              scenarios, including functional and UI testing. My work involved close collaboration with developers to
+              troubleshoot and resolve issues, significantly improving the application’s performance and stability.
+              Additionally, I contributed to the continuous improvement of the testing framework, ensuring its
+              adaptability to new features and updates.</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Zohair_SQA.pdf')">
+              Download CV
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <!-- <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div> -->
+          <h2 class="experience-sub-title project-title">Scan123</h2>
+          <h4>Manual</h4>
+          <div class="text-container">
+            <p>In my role as a QA Engineer, I have gained extensive experience in manual testing, focusing on ensuring the
+              quality and functionality of software applications. I have developed and executed detailed test plans and test
+              cases, meticulously verifying that all features meet the specified requirements. My work involves identifying
+              and documenting defects, collaborating closely with developers to ensure prompt resolution. I am proficient in
+              conducting various types of testing, including functional, regression, and user acceptance testing (UAT), and
+              have a strong understanding of the software development lifecycle (SDLC) and Agile methodologies.</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Zohair_SQA.pdf')">
+              Download CV
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p>
+          <a href="mailto:examplemail@gmail.com">imzohair9@gmail.com</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p>
+          <a href="https://www.linkedin.com/in/m-zohair-8868a12a9">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
